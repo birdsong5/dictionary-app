@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./App.css";
+import Dictionary from "./Dictionary";
 
 function App() {
   return (
@@ -9,13 +10,7 @@ function App() {
         <h1>Dictionary</h1>
       </header>
       <div className="container">
-        <div className="search-section">
-          <h3>Search for a word you want to look up</h3>
-          <form>
-            <input type="search" />
-            <input type="submit" />
-          </form>
-        </div>
+        <Dictionary />
         <div className="photos-section"></div>
         <div className="definition-section"></div>
       </div>
