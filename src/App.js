@@ -9,11 +9,9 @@ function App() {
       <header className="App-header">
         <h1>Dictionary</h1>
       </header>
-      <div className="container">
-        <Dictionary />
-        <div className="photos-section"></div>
-        <div className="definition-section"></div>
-      </div>
+
+      <Dictionary />
+      <div className="photos-section"></div>
     </div>
   );
 }
