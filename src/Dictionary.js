@@ -23,12 +23,13 @@ export default function Dictionary() {
   return (
     <div className="container">
       <div className="search-section">
-        <h3>Search for a word you want to look up</h3>
+        <h2>Search for a word you want to look up</h2>
         <form onSubmit={search}>
-          <input type="search" onChange={handleWordChange} />
+          <input type="search" onChange={handleWordChange} />{" "}
           <input type="submit" />
         </form>
       </div>
+      <div className="photos-section"></div>
       <Definition results={results} />
     </div>
   );

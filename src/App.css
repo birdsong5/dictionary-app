@@ -1,3 +1,31 @@
+.App-header h1 {
+  font-size: 70px;
+  margin-left: 230px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
 .container {
+  width: 70%;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 auto 30px;
   display: grid;
+  grid-template-columns: 60% 40%;
+  grid-gap: 10px;
+  align-items: center;
+}
+
+.search-section {
+  background-color: rgba(246, 157, 47, 0.534);
+  border-radius: 10px;
+  padding: 0 30px 20px;
+}
+
+.definition-section {
+  background-color: rgba(191, 145, 112, 0.512);
+  border-radius: 10px;
+  padding: 0 15px 20px;
 }
