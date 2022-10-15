@@ -11,10 +11,17 @@ export default function Dictionary() {
     setResults(response.data[0]);
   }
 
+  function handlePexelResponse(response) {}
+
   function search(event) {
     event.preventDefault();
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
     axios.get(apiUrl).then(handleResponse);
+
+    const pexelApiKey =
+      "563492ad6f91700001000001792c58a3e95b408cacff4283a24d7564";
+    let pexelApiUrl = `https://api.pexels.com/v1/search?query=${word}&per_page=1`;
+    axios.get(pexelApiKey).then(handlePexelResponse);
   }
 
   function handleWordChange(event) {
