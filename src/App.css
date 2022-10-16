@@ -20,7 +20,7 @@
 }
 
 .search-section {
-  background-color: rgba(246, 157, 47, 0.534);
+  background-color: rgba(158, 75, 16, 0.814);
   border-radius: 10px;
   padding: 0 30px 20px;
   align-self: flex-start;
@@ -28,6 +28,7 @@
 
 .search-section h2 {
   font-size: 30px;
+  color: white;
 }
 
 .definition-section {
@@ -39,6 +40,12 @@
 
 .definition-section h2 {
   font-size: 32px;
+}
+
+.meanings h4 {
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .phonetics-row {
