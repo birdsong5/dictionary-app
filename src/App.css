@@ -1,9 +1,10 @@
 .App-header h1 {
-  font-size: 70px;
+  font-size: 100px;
   margin-left: 230px;
   margin-bottom: 0;
+  margin-top: 0;
   text-transform: uppercase;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .container {
@@ -37,8 +38,24 @@
 }
 
 .definition-section h2 {
-  font-size: 20px;
-  text-transform: uppercase;
+  font-size: 32px;
+}
+
+.phonetics-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.phonetics a {
+  font-size: 25px;
+  color: black;
+  opacity: 0.6;
+}
+
+.phonetics-text {
+  font-weight: 500;
+  font-size: 22px;
 }
 
 .photos-section {
