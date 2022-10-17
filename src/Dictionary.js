@@ -29,6 +29,15 @@ export default function Dictionary(props) {
     axios.get(pexelApiUrl, { headers: headers }).then(handlePexelResponse);
   }
 
+  function handleSubmit(event) {
+    event.preventDefault();
+    if (word.length > 0) {
+      search();
+    } else {
+      alert("Please enter a word.");
+    }
+  }
+
   function handleWordChange(event) {
     setWord(event.target.value);
   }
@@ -43,7 +52,7 @@ export default function Dictionary(props) {
       <div className="container">
         <div className="search-section">
           <h2>Search for a word you want to look up</h2>
-          <form onSubmit={search}>
+          <form onSubmit={handleSubmit}>
             <input
               type="search"
               onChange={handleWordChange}

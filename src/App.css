@@ -1,10 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:ital,wght@0,400;0,500;1,200;1,300&display=swap");
+
 .App-header h1 {
   font-size: 100px;
+  font-family: "Montserrat", sans-serif;
   margin-left: 230px;
   margin-bottom: 0;
-  margin-top: 0;
+  margin-top: 10px;
   text-transform: uppercase;
-  opacity: 0.4;
+  background: linear-gradient(
+    87.4deg,
+    rgb(220, 193, 168) 1.9%,
+    rgb(99, 46, 9) 49.7%,
+    rgb(211, 95, 11) 100.5%
+  );
+  background-clip: text;
+  color: transparent;
 }
 
 .container {
@@ -20,7 +30,7 @@
 }
 
 .search-section {
-  background-color: rgba(158, 75, 16, 0.814);
+  background-color: rgba(158, 49, 16, 0.855);
   border-radius: 10px;
   padding: 0 30px 20px;
   align-self: flex-start;
@@ -32,7 +42,7 @@
 }
 
 .definition-section {
-  background-color: rgba(191, 145, 112, 0.422);
+  background-color: rgba(252, 227, 206, 0.901);
   border-radius: 10px;
   padding: 0 15px 20px;
   align-self: flex-start;
