@@ -6,7 +6,6 @@ import Meaning from "./Meaning";
 import "./App.css";
 
 export default function Definition(props) {
-  console.log(props.results.phonetics);
   if (props.results) {
     return (
       <div className="definition-section">

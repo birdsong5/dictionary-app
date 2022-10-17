@@ -10,7 +10,7 @@ function App() {
         <h1>Dictionary</h1>
       </header>
 
-      <Dictionary />
+      <Dictionary defaultWord="earth" />
       <div className="author">
         <a
           className="git"

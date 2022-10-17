@@ -4,9 +4,10 @@ import Definition from "./Definition";
 import Photos from "./Photos";
 import "./App.css";
 
-export default function Dictionary() {
-  const [word, setWord] = useState("");
+export default function Dictionary(props) {
+  const [word, setWord] = useState(props.defaultWord);
   const [results, setResults] = useState(null);
+  const [loaded, setLoaded] = useState(false);
   const [photos, setPhotos] = useState(null);
 
   function handleResponse(response) {
@@ -17,8 +18,7 @@ export default function Dictionary() {
     setPhotos(response.data.photos);
   }
 
-  function search(event) {
-    event.preventDefault();
+  function search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
     axios.get(apiUrl).then(handleResponse);
 
@@ -32,17 +32,32 @@ export default function Dictionary() {
   function handleWordChange(event) {
     setWord(event.target.value);
   }
-  return (
-    <div className="container">
-      <div className="search-section">
-        <h2>Search for a word you want to look up</h2>
-        <form onSubmit={search}>
-          <input type="search" onChange={handleWordChange} />{" "}
-          <input type="submit" />
-        </form>
+
+  function load() {
+    setLoaded(true);
+    search();
+  }
+
+  if (loaded) {
+    return (
+      <div className="container">
+        <div className="search-section">
+          <h2>Search for a word you want to look up</h2>
+          <form onSubmit={search}>
+            <input
+              type="search"
+              onChange={handleWordChange}
+              defaultValue={props.defaultWord}
+            />{" "}
+            <input type="submit" />
+          </form>
+        </div>
+        <Photos photos={photos} />
+        <Definition results={results} />
       </div>
-      <Photos photos={photos} />
-      <Definition results={results} />
-    </div>
-  );
+    );
+  } else {
+    load();
+    return "Loading";
+  }
 }
