@@ -41,6 +41,17 @@
   color: white;
 }
 
+.search-section input {
+  border: none;
+  border-radius: 10px;
+  padding: 7px 10px;
+}
+
+.search-section input [type="submit"] {
+  padding: 12px;
+  background-color: bisque;
+}
+
 .definition-section {
   background-color: rgba(252, 227, 206, 0.901);
   border-radius: 10px;

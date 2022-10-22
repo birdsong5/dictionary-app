@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlayCircle } from "@fortawesome/free-regular-svg-icons";
 import Definition from "./Definition";
 import Photos from "./Photos";
 import "./App.css";
@@ -9,6 +11,8 @@ export default function Dictionary(props) {
   const [results, setResults] = useState(null);
   const [loaded, setLoaded] = useState(false);
   const [photos, setPhotos] = useState(null);
+
+  let searchValue = `<FontAwesomeIcon icon="fa-regular fa-magnifying-glass" />Search`;
 
   function handleResponse(response) {
     setResults(response.data[0]);
@@ -58,7 +62,7 @@ export default function Dictionary(props) {
               onChange={handleWordChange}
               defaultValue={props.defaultWord}
             />{" "}
-            <input type="submit" />
+            <input type="submit" value="Search" />
           </form>
         </div>
         <Photos photos={photos} />
