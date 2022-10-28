@@ -6,7 +6,14 @@ export default function Photos(props) {
     return (
       <div className="photos-section">
         {props.photos.map(function (photo, index) {
-          return <img key={index} src={photo.src.tiny} alt={photo.alt} />;
+          return (
+            <img
+              key={index}
+              src={photo.src.tiny}
+              alt={photo.alt}
+              className="img-fluid photo"
+            />
+          );
         })}
       </div>
     );
