@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;700&family=Montserrat:wght@700;800&display=swap");
 
+body {
+  margin: 20px 0;
+  background-color: rgba(49, 6, 69, 0.899);
+}
+
 .App-header {
   margin-top: 30px;
   margin-bottom: 15px;
@@ -126,4 +131,9 @@
 
 .author a:hover {
   color: rgb(116, 111, 220);
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
 }
