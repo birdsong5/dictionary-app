@@ -92,13 +92,14 @@
 }
 
 .synonyms {
-  font-weight: 400;
+  font-weight: 200;
   margin-top: 0;
+  font-size: 16px;
 }
 
 .synonym-word {
   background-color: rgba(124, 106, 142, 0.478);
-  padding: 3px 6px;
+  padding: 1px 6px 3px;
   border-radius: 25px;
   margin-right: 8px;
 }
