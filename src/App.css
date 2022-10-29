@@ -1,11 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:ital,wght@0,400;0,500;1,200;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;700&family=Montserrat:wght@700;800&display=swap");
+
+.App-header {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
 
 .App-header h1 {
   font-size: 100px;
   font-family: "Montserrat", sans-serif;
   display: inline;
-  padding: 5px;
-  margin: 30px;
+  padding: 0 15px;
+  margin-left: 180px;
   text-transform: uppercase;
   color: white;
   background: rgb(141, 228, 11);
@@ -21,17 +26,20 @@
   grid-template-columns: 70% 30%;
   grid-gap: 10px;
   align-items: center;
+  font-family: "Lexend", sans-serif;
 }
 
 .search-section {
   background-color: rgba(220, 107, 8, 0.959);
   border-radius: 10px;
-  padding: 20px 30px;
+  padding: 20px 10px 30px 30px;
   align-self: flex-start;
 }
 
 .search-section h2 {
-  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
   color: white;
   margin-bottom: 20px;
 }
@@ -39,13 +47,7 @@
 .search-section input {
   border: none;
   border-radius: 10px;
-  padding: 7px 10px;
-}
-
-.search-section input [type="submit"] {
-  padding: 12px;
-  background-color: bisque;
-  font-size: 20px;
+  padding: 5px 10px;
 }
 
 .definition-section {
@@ -57,13 +59,25 @@
 }
 
 .definition-section h2 {
-  font-size: 32px;
+  font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 3px;
 }
 
 .meanings h4 {
-  font-size: 22px;
-  margin-top: 0;
-  margin-bottom: 0;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.meanings p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.meanings p.example {
+  font-size: 15px;
+  font-weight: 200;
 }
 
 .phonetics-row {
@@ -72,15 +86,21 @@
   align-items: center;
 }
 
-.phonetics a {
-  font-size: 25px;
-  color: black;
-  opacity: 0.6;
-}
-
 .phonetics-text {
   font-weight: 500;
   font-size: 22px;
+}
+
+.synonyms {
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.synonym-word {
+  background-color: rgba(124, 106, 142, 0.478);
+  padding: 3px 6px;
+  border-radius: 25px;
+  margin-right: 8px;
 }
 
 .photos-section {
@@ -97,8 +117,12 @@
 .author {
   text-align: center;
   margin-bottom: 30px;
+  color: white;
+}
+.author a {
+  color: rgb(204, 202, 249);
 }
 
-.synonyms {
-  font-weight: 500;
+.author a:hover {
+  color: rgb(116, 111, 220);
 }

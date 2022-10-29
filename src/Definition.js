@@ -12,11 +12,19 @@ export default function Definition(props) {
         <div className="phonetics-row">
           <h2>{props.results.word}</h2>
           {props.results.phonetics.map(function (phonetic, index) {
+            const audio = new Audio(phonetic.audio);
+            function playSound() {
+              audio.play();
+            }
+            if (phonetic.audio.length === 0) return <></>;
             return (
               <div className="phonetics" key={index}>
-                <a href={phonetic.audio} target="_blank" rel="noreferrer">
-                  <FontAwesomeIcon icon={faPlayCircle} />
-                </a>
+                <FontAwesomeIcon
+                  icon={faPlayCircle}
+                  opacity="0.8"
+                  fontSize={25}
+                  onClick={playSound}
+                />
                 {"   "}
                 <span className="phonetics-text">{phonetic.text}</span>
               </div>
