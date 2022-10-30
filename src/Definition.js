@@ -24,6 +24,7 @@ export default function Definition(props) {
                   opacity="0.8"
                   fontSize={25}
                   onClick={playSound}
+                  onTouchEnd={playSound}
                 />
                 {"   "}
                 <span className="phonetics-text">{phonetic.text}</span>
