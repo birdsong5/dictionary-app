@@ -78,6 +78,7 @@ body {
 .meanings p {
   font-size: 18px;
   font-weight: 300;
+  margin-bottom: 14px;
 }
 
 .meanings p.example {
@@ -96,17 +97,17 @@ body {
   font-size: 22px;
 }
 
-.synonyms {
+.meanings p .synonyms {
   font-weight: 200;
   margin-top: 0;
   font-size: 16px;
 }
 
-.synonym-word {
+.meanings p .synonym-word {
   background-color: rgba(124, 106, 142, 0.478);
   padding: 1px 6px 3px;
   border-radius: 25px;
-  margin-right: 8px;
+  margin: 0 8px 5px 0;
 }
 
 .photos-section {
@@ -132,8 +133,171 @@ body {
 .author a:hover {
   color: rgb(116, 111, 220);
 }
+@media (max-width: 280px) {
+  .App-header {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .App-header h1 {
+    font-size: 32px;
+    margin-left: 0;
+  }
+  .container {
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto 15px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 10px;
+  }
+  .photos-section {
+    display: none;
+  }
+  .search-section {
+    padding: 10px 10px 15px;
+  }
+  .search-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .search-section input {
+    padding: 0 5px;
+    margin-bottom: 5px;
+  }
+  .definition-section {
+    padding: 5px;
+  }
+  .definition-section h2 {
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  .meanings h4 {
+    font-size: 15px;
+    text-decoration: underline;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .meanings p {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .meanings p.example {
+    font-size: 13px;
+    font-weight: 200;
+  }
+  .meanings p .synonyms {
+    font-size: 13px;
+  }
+  .meanings p .synonym-word {
+    padding: 0 4px 1px 8px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  .phonetics-text {
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 281px) and (max-width: 767.98px) {
+  .App-header {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .App-header h1 {
+    font-size: 48px;
+    margin-left: 0;
+  }
+  .container {
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto 30px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 10px;
+  }
+  .photos-section {
+    display: none;
+  }
+  .search-section {
+    padding: 20px 10px 15px 15px;
+  }
+  .search-section h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  .search-section input {
+    padding: 0 10px;
+    margin-bottom: 5px;
+  }
+  .definition-section {
+    padding: 10px 5px;
+  }
+  .definition-section h2 {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .meanings h4 {
+    font-size: 17px;
+    text-decoration: underline;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .meanings p {
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .meanings p.example {
+    font-size: 13px;
+  }
+  .meanings p .synonym-word {
+    padding: 0 4px 1px 8px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  .phonetics-text {
+    font-weight: 500;
+    font-size: 18px;
+  }
+}
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .App-header {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .App-header h1 {
+    font-size: 80px;
+    margin-left: 0;
+  }
+  .container {
+    width: 85%;
+  }
+  .definition-section {
+    padding: 10px 0;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .App-header {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .App-header h1 {
+    font-size: 100px;
+    margin-left: 0;
+  }
+  .container {
+    width: 85%;
+  }
 }
