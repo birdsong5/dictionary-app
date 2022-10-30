@@ -58,7 +58,7 @@ export default function Dictionary(props) {
               onChange={handleWordChange}
               defaultValue={props.defaultWord}
             />{" "}
-            <input type="submit" value="Search" className="btn-primary" />
+            <input type="submit" value="Search" className="btn-light" />
           </form>
         </div>
         <Photos photos={photos} />
